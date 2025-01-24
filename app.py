@@ -96,10 +96,8 @@ if st.button("Predict"):
         if prediction == 1:
             st.image("approved.png")
             st.write("loan approved")
-            st.write(prediction)
         else:
             st.image("rejected.png")
             st.write("loan rejected")
-            st.write(prediction)
     except Exception as e:
         st.error(f"Error during prediction: {e}")
